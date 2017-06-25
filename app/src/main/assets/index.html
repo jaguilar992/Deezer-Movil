@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<title>Freezer</title>
+	<meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/style.css">
+
+</head>
+<body>
+
+
+<div class="container-fluid" id="main">
+	<h4 class="text-center">Selección de Playlists</h4>
+	<div class="row well card">
+		<div class="col-xs-12">
+			<img src="img/playlist/a264x264.jpg" class="img-rounded img-responsive card" alt="">
+			<span class="help-block text-center">
+				<h5>El mejor rock de todos los tiempos</h5>
+			</span>
+		</div>
+	</div>
+	<div class="row well card">
+		<div class="col-xs-12">
+			<img src="img/playlist/b264x264.jpg" class="img-rounded img-responsive card" alt="">
+			<span class="help-block text-center">
+				<h5>Back to school</h5>
+			</span>
+		</div>
+	</div>
+	<div class="row well card">
+		<div class="col-xs-12">
+			<img src="img/playlist/c264x264.jpg" class="img-rounded img-responsive card" alt="">
+			<span class="help-block text-center">
+				<h5>Prince covers y colaboraciones</h5>
+			</span>
+		</div>
+	</div>
+	<div class="row well card">
+		<div class="col-xs-12">
+			<img src="img/playlist/d264x264.jpg" class="img-rounded img-responsive card" alt="">
+			<span class="help-block text-center">
+				<h5>Epicos de los 80' y 90'</h5>
+			</span>
+		</div>
+	</div>
+
+	<h4 class="text-center">Nuevos Lanzamientos</h4>
+	<div class="row well card">
+		<div class="col-xs-12">
+			<img src="img/album/a264x264.jpg" class="img-rounded img-responsive card" alt="">
+			<span class="help-block text-center">
+				<h5>Rarities of fetichism</h5>
+			</span>
+		</div>
+	</div>
+	<div class="row well card">
+		<div class="col-xs-12">
+			<img src="img/album/b264x264.jpg" class="img-rounded img-responsive card" alt="">
+			<span class="help-block text-center">
+				<h5>Amos supremo desnudo</h5>
+			</span>
+		</div>
+	</div>
+	<div class="row well card">
+		<div class="col-xs-12">
+			<img src="img/album/c264x264.jpg" class="img-rounded img-responsive card" alt="">
+			<span class="help-block text-center">
+				<h5>Ctrl</h5>
+			</span>
+		</div>
+	</div>
+	<div class="row well card">
+		<div class="col-xs-12">
+			<img src="img/album/d264x264.jpg" class="img-rounded img-responsive card" alt="">
+			<span class="help-block text-center">
+				<h5>Wonder</h5>
+			</span>
+		</div>
+	</div>
+</div>
+
+<div class="player" id="player">
+	<div class="container-fluid">
+
+		<div class="row" id="info">
+			<div class="col-xs-2">
+				<img src="img/cover/x.jpg" alt="cover" id="album-cover-play">
+			</div>
+			<div class="col-xs-10">
+				<p class="info-txt" style="color:#F8F8F8;" id="player-title">Lorem</p>
+				<p class="info-txt" style="color:#B2B4B3" id="player-artist">Ipsum</p>
+			</div>
+		</div>
+		
+		<div class="row" id="controls">
+			<div class="col-xs-4 text-center">
+				<span id="player-prev" class="player-control glyphicon glyphicon-step-backward"></span>
+			</div>
+			<div class="col-xs-4 text-center">
+				<span id="player-play" class="player-control glyphicon glyphicon-play"></span>
+			</div>
+			<div class="col-xs-4 text-center">
+				<span id="player-next" class="player-control glyphicon glyphicon-step-forward"></span>
+			</div>
+		</div>
+
+	</div>
+</div>
+
+
+
+<script type="text/javascript" src="js/jquery-3.2.1.min.js"></script>
+<script type="text/javascript" src="js/soundmanager2.min.js"></script>
+<script type="text/javascript" src="js/player.js"></script>
+
+<script type="text/javascript">
+	$(document).ready(function(){
+		$("#player-play").click(function(){
+			lista.toogle();
+		});
+
+		$("#player-prev").click(function(){
+			lista.prev();
+		});
+
+		$("#player-next").click(function(){
+			lista.next();
+		});
+	});
+</script>
+</body>
+</html

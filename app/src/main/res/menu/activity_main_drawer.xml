@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/search"
+            android:icon="@android:drawable/ic_search_category_default"
+            android:title="Búsqueda" />
+        <item
+            android:id="@+id/main"
+            android:icon="@drawable/ic_main"
+            android:title="Inicio" />
+        <item
+            android:id="@+id/feed"
+            android:icon="@drawable/ic_feed"
+            android:title="Recomendaciones" />
+        <item
+            android:id="@+id/music"
+            android:icon="@drawable/ic_music"
+            android:title="Mi música" />
+    </group>
+
+    <item android:title="Información">
+        <menu>
+            <item
+                android:id="@+id/profile"
+                android:icon="@drawable/ic_profile"
+                android:title="Perfil" />
+        </menu>
+    </item>
+
+</menu>

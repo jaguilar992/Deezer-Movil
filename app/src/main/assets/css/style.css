@@ -1,0 +1,57 @@
+body{
+	background: #F1F1F1;
+}
+
+#main{
+	padding-top: 10px;
+	padding-bottom: 100px;
+}
+
+#main .row{
+	margin: 0px;
+}
+
+.card{
+background-color: #fff;
+	box-shadow: 0 1px 2px rgba(25,25,34,.15);
+		-webkit-box-shadow: 0 1px 2px rgba(25,25,34,.15);
+}
+
+#player{
+	z-index: 1000;
+	position: fixed;
+	bottom: 0;
+	height: 50px;
+	width: 100%;
+	overflow: hidden;
+	background-color: #101318;
+}
+
+#player .row,
+#player .row>div{
+	height:50px;
+}
+
+.player-control{
+	color: white;
+	padding-top: 13px;
+	font-size: 24px;
+}
+
+#album-cover-play{
+	width: 30px;
+	height: 30px;
+	margin-top: 10px;
+}
+
+#info{
+	background-image: url("../img/progress.png");
+	background-repeat: no-repeat;
+	background-size: 0px 50px;
+	display: none;
+}
+
+.info-txt{
+	margin: 0px;
+	color: white;
+}
